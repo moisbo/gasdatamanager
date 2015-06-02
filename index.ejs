@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-resource/angular-resource.min.js"></script>
+    <script type="text/javascript" src="app/app.js"></script>
+</head>
+<body ng-app="app" class="container">
+<h1>Raw Data</h1>
+<table ng-controller="csvrawCtrl" class="table table-bordered table-hover">
+    <tr><th>#</th><th>Unit Id</th><th>Chamber</th><th>Type</th><th>Date</th><th>Value</th></tr>
+    <tr ng-repeat="csvraw in csvrawdata">
+        <td>{{ $index + 1 }}</td><td>{{ csvraw.unitId }}</td><td>{{ csvraw.chamber }}</td><td>{{ csvraw.type }}</td><td>{{ csvraw.date }}</td><td>{{ csvraw.value }}</td>
+    </tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "gasdatamanager",
+  "version": "0.0.0",
+  "description": "a csv data manager for compost sensors",
+  "authors": [
+    "Moises Sacal"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/moisbo/gasdatamanager",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "angular": "~1.4.0",
+    "bootstrap": "~3.3.4",
+    "angular-resource": "~1.4.0"
+  }
+}
