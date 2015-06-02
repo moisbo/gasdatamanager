@@ -20,8 +20,8 @@ app.get('*', function(req, res){
     res.render('index');
 });
 
-//var mongoCon = "mongodb://moisbo:moisbo@ds043082.mongolab.com:43082/gasdatamanager";
-var mongoCon = "mongodb://localhost/gasdatamanager";
+var mongoCon = "mongodb://moisbo:moisbo@ds043082.mongolab.com:43082/gasdatamanager";
+//var mongoCon = "mongodb://localhost/gasdatamanager";
 
 csvData.connectDB(mongoCon).then(function () {
     console.log('connected to mongo');
