@@ -28,5 +28,6 @@
   "devDependencies": {
     "bower": "^1.4.1",
     "chai": "^2.3.0"
-  }
+  },
+  "engine": "node >= 0.10.0"
 }
