@@ -28,4 +28,4 @@ csvData.connectDB(mongoCon).then(function () {
     csvData.seedCsvraw();
 });
 
-app.listen(process.env.PORT || 80, process.env.IP || 'localhost');
+app.listen(process.env.PORT, process.env.IP);
