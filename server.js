@@ -20,9 +20,12 @@ app.get('*', function(req, res){
     res.render('index');
 });
 
-csvData.connectDB('mongodb://localhost/gasdatamanager').then(function () {
+//var mongoCon = "mongodb://moisbo:moisbo@ds043082.mongolab.com:43082/gasdatamanager";
+var mongoCon = "mongodb://localhost/gasdatamanager";
+
+csvData.connectDB(mongoCon).then(function () {
     console.log('connected to mongo');
-    csvrawModel.seedCsvraw();
+    csvData.seedCsvraw();
 });
 
 app.listen(process.env.PORT || 3000, process.env.IP || 'localhost');
